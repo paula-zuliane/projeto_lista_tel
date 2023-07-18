@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur&family=VT323&display=swap" rel="stylesheet">
+    <title>Lista Telefonica</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/telefone.png" alt="telefone vermelho antigo"/>
+            <h1>Telefones Importantes</h1>
+            <img src="images/telefone.png" alt="telefone vermelho antigo"/>
+        </header>
+        <form id="form-lista">
+            <input type="text" id="nome-add" required placeholder="Nome do contato"/>
+            <input type="number" id="numero-add" required placeholder="Numero do contato"/>
+            <button type="submit" id="botao">Adicionar contato</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="contato"></td>
+                    <td id="numero-telefone"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<footer>
+    <h3>Site feito com propósito de aprendizado em programação</h3>
+</footer>
+<script src="./main.js"></script>
+</html>
