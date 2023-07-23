@@ -1,5 +1,5 @@
 const form = document.getElementById('form-lista');
-/*let contatos = document.getElementById('contatos');*/
+let contatos = [];
 let linhas = '';
 
 form.addEventListener('submit', function(e){
@@ -13,9 +13,9 @@ function addLinha (){
     const addNome = document.getElementById('nome-add');
     const addNumero = document.getElementById('numero-add');
 
-    /*if(addNome.includes(contatos.value)){
+    if(contatos.includes(addNome.value)){
         alert (`o nome de contato ${contatos.value} já é existente. Favor inserir um novo contato!`)
-    } else{*/
+    } else{
 
         let linha = '<tr>';
         linha += `<td>${addNome.value}</td>`;
@@ -23,7 +23,8 @@ function addLinha (){
         linha += '</tr>';
 
         linhas += linha;
-    /*}*/
+        let contatos = document.getElementById('contato');
+    }
 
     addNome.value = '';
     addNumero.value = '';
