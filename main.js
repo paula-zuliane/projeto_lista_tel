@@ -23,7 +23,7 @@ function addLinha (){
         linha += '</tr>';
 
         linhas += linha;
-        let contatos = document.getElementById('contato');
+        contatos.push(addNome.value);
     }
 
     addNome.value = '';
